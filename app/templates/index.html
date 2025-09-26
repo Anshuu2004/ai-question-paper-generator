@@ -1118,6 +1118,7 @@ function buildPayload(){
               class: classSelect.value,
               subject: subjectSelect.value,
               paperLanguage: document.getElementById('paperLanguage').value, // <-- ADDED THIS LINE
+              topic: topicInput.value.trim(), // <-- ADD THIS LINE FOR TOPIC
               chapters: Array.from(chaptersContainer.querySelectorAll('.chapter-checkbox:checked')).map(cb => cb.value),
               questionDistribution: {},
               difficultyDistribution: {}
